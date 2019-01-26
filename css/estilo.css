@@ -1,0 +1,281 @@
+*{margin:0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Open Sans', sans-serif;
+}
+.clear{clear: both;}
+.container{
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 4%;
+}
+.w50{
+	float: left;
+	width: 50%;
+}
+.line{
+	display: inline-block;
+	position: relative;
+		margin-top: 40px;
+}
+.line > div{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100px;
+	height: 4px;
+	background-color:#737373;
+	transition: 1s;
+}
+.line:hover > div{
+	width: 200px;
+	background-color:#737373;
+}
+.line h2{
+	color: #737373;
+	font-size:40px;
+}
+
+header{
+	padding: 10px 0;
+	background-color: #f2f2f2;
+}
+.logo{
+	float: left;
+	font-size: 26px;
+	font-family: 'Staatliches', cursive;
+}
+.logo a{
+	text-decoration:none;
+	color: #737373;
+}
+.logo a:hover{
+	color: #ccc;
+	text-decoration: none;
+}
+
+nav.menu{
+	float: right;
+	font-size: 20px;
+	color: white;
+}
+nav.menu ul{
+	position: relative;
+	top: 8px;
+}
+nav.menu li{
+	padding: 0 30px;
+	display: inline-block;
+}
+nav.menu li{
+	display: inline-block;
+	padding: 0 30px;
+}
+nav.menu a{
+	color: #737373;
+	text-decoration: none;
+}
+nav.menu a:hover{
+	color: #ccc;
+	text-decoration: none;
+}
+nav.mobile{
+	display:none;
+	float:right;
+}
+nav.mobile ul{
+	display:none;
+	width: 100%;
+	background-color: white;
+	position: absolute;
+	left: 0;
+	top: 70px;
+	z-index: 999;
+	text-align: center;
+}
+nav.mobile h2{
+	cursor: pointer;
+	font-size: 40px;
+}
+
+nav.mobile li{
+	padding: 8px 0;
+	border-bottom: 4px solid #f2f2f2
+;
+}
+nav.mobile li:hover{
+	background-color: #f5f5f0;
+}
+nav.mobile a{
+	text-decoration: none;
+	color: black;
+	display: block;
+}
+
+
+section.bg_paralax1, .bg_paralax2, .bg_paralax3{
+	width: 100%;
+	position: relative;
+	min-height:100%;
+	opacity: 0.65;
+	padding: 180px 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+section.bg_paralax1{
+	background-image: url(../img/bg3.jpg);
+}
+section.bg_paralax2{
+	background-image: url(../img/bg2.jpg);
+}
+section.bg_paralax3{
+	background-image: url(../img/bg3.jpg);
+}
+section.bg_paralax1, .bg_paralax2, .bg_paralax3 p{
+	color: white;
+	font-weight: lighter;
+	text-align: center;
+	font-size: 24px;
+}
+.caption p.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+}
+section.descricao{
+	background-color:#f5f5f0;
+	padding: 70px;
+	position: relative;
+}
+section.descricao p{
+	color:#999999;
+	font-size: 20px;
+	font-weight: lighter;
+	margin-bottom:30px;
+}
+footer.footer1{
+	background-color:#f2f2f2;
+	padding: 30px;
+}
+footer.footer1 h2{
+	color:#999999;
+	font-weight: normal;
+}
+footer.footer1 h1{
+	color:#999999;
+	font-weight: normal;
+	font-size: 40px;
+	text-align: center;
+}
+footer.footer1 p{
+	font-weight: lighter;
+}
+footer.footer1 a{
+	text-decoration:none;
+	color:#ccc;
+}
+footer.footer1 a:hover{
+	text-decoration:none;
+	color:black;
+}
+
+footer.footer2{
+	background-color:#e6e6e6;
+	padding: 20px;
+}
+footer.footer2 h2{
+	color:#999999;
+	text-align: center;
+}
+
+section.sobre_bg{
+	padding: 30px;
+	width: 100%;
+	position: relative;
+	min-height:240px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat; 
+}
+section.sobre_bg h2{
+	color: white;
+	font-size: 30px;
+}
+section.sobre_bg p{
+	color: white;
+	margin-top: 10px;
+	font-weight: lighter;
+	font-size: 22px;
+}
+
+.equipe_circles{
+	margin-top: 50px;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+.box_equipe{
+	text-align: center;
+	padding: 0 20px;
+	width: 32.0%;
+	margin-bottom:40px;
+	transition: 1s;
+}
+.box_equipe:hover{
+	text-align: center;
+	padding: 0 20px;
+	width: 33.3%;
+	margin-bottom:40px;
+}
+.box_equipe h3{
+	margin-top: 10px;
+	font-weight: normal;
+}
+.box_equipe p{
+	font-weight:lighter;
+}
+.avatar_equipe{
+	position: relative;
+	width: 60%;
+	padding-top: 60%;
+	margin: 0 auto;
+}
+
+.avatar_single{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-color: #ccc;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-size: 100% 100%;
+}
+
+
+@media screen and (max-width:768px){
+		.w50{
+			width: 100%;
+			margin-bottom: 10px;
+			text-align: center;
+		}
+		nav.mobile{
+			display: block;
+		}
+		nav.menu{
+			display: none;
+		}
+		header{
+			background-color: white;
+		}
+		.box_equipe{
+			width: 50%;
+		}
+		.box_equipe:hover{
+			width: 50%;
+		}
+
+}
